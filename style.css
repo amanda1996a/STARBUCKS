@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.conteudo {
+    width: 100%;        /*largura*/
+    display: flex;
+    justify-content: space-between;     /*adiciona espaço entre os itens*/
+    align-items: center;                /*alinha tudo ao centro*/
+}
+
+body{
+    padding-top: 25px;     /*adiciona espaçamento*/
+    padding-right: 100PX;
+    padding-left: 100px;
+}
+
+.caixa-texto {
+    width: 600px;
+}
+
+.caixa-imagem {
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;    /* joga item todo pra o lado */
+    margin-top: 250px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    background-color: #017143;  /* cor de fundo */
+    color: #ffffff;             /* cor da fonte */
+    border: none;                 /* significa sem borda */
+    padding: 10px;                /* distanciamento de dentro pra fora */
+    border-radius: 20px;          /* aredondar a borda */
+}
+
+h2 {
+    font-size:60px;               /* tamanho da fonte */
+    font-weight: 500px;           /* grossura da fonte */
+}
+
+p {
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+span {
+    color: #017143; 
+    font-size: 70px;
+    font-weight: 900px;
+}
+
+.logo {
+    width: 80px; 
+}
+
+.starbucks {
+    width: 340px;
+    z-index: 2;                                  /* Fala quem fica na frente, quem fica atrás */
+}
+
+.copo-pequeno {
+    width: 60px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.copo-pequeno:hover {
+ transform: translateY(-35px);
+}
+
+.circulo {
+    background: #017143;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    clip-path: circle(600px at right 800px);       /* Isso quer dizer, recorta meu quadrado em formato de circulo e eu quero que omeu circulo tenha 600 X 800 */
+}
